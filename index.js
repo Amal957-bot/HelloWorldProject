@@ -8,8 +8,18 @@ app.get('/', (req, res) => {
 
 
 app.get('/logout', (req, res) => {
-   res.send('logout successfull!')
+   res.send('log out successfull!')
 })
+
+app.get('/forgetpassword', (req, res) => {
+   res.send('change password!')
+})
+
+app.get('/forgetpassword', (req, res) => {
+   res.send('change password!')
+})
+
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
