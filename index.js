@@ -15,10 +15,6 @@ app.get('/forgetpassword', (req, res) => {
    res.send('change password!')
 })
 
-app.get('/forgetpassword', (req, res) => {
-   res.send('change password!')
-})
-
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
