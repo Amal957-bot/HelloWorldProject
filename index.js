@@ -7,9 +7,14 @@ app.get('/', (req, res) => {
 })
 
 
+app.get('/login', (req, res) => {
+   res.send('login successfull!')
+})
+
 app.get('/logout', (req, res) => {
    res.send('logout successfull!')
 })
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
