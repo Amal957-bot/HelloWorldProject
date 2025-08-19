@@ -7,10 +7,13 @@ app.get('/', (req, res) => {
 })
 
 
+app.get('/login', (req, res) => {
+   res.send('login successfull!')
+})
+
 app.get('/logout', (req, res) => {
    res.send('logout successfull!')
 })
-
 
 app.get('/application', (req, res) => {
    res.send('Application Completed Successfully!')
