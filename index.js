@@ -12,12 +12,18 @@ app.get('/login', (req, res) => {
 })
 
 app.get('/logout', (req, res) => {
-   res.send('logout successfull!')
+   res.send('log out successfull!')
+})
+
+
+app.get('/forgetpassword', (req, res) => {
+   res.send('change password!')
 })
 
 app.get('/application', (req, res) => {
    res.send('Application Completed Successfully!')
 })
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
