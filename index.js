@@ -10,6 +10,12 @@ app.get('/', (req, res) => {
 app.get('/logout', (req, res) => {
    res.send('logout successfull!')
 })
+
+app.get('/register', (req, res) => {
+     res.send('Registartion successful!')
+})
+
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
