@@ -20,8 +20,13 @@ app.get('/forgetpassword', (req, res) => {
    res.send('change password!')
 })
 
+
+app.get('/register', (req, res) => {
+     res.send('Registartion successful!')
+=======
 app.get('/application', (req, res) => {
    res.send('Application Completed Successfully!')
+
 })
 
 
