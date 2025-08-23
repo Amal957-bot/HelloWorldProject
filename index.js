@@ -2,29 +2,31 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 
-// get port from .env or default to 3000
+// Use port from .env or fallback to 3000
 const PORT = process.env.PORT || 3000
 
+// Routes
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
 app.get('/login', (req, res) => {
-  res.send('login successful!')
+  res.send('Login successful!')
 })
 
 app.get('/logout', (req, res) => {
-  res.send('log out successful!')
+  res.send('Log out successful!')
 })
 
 app.get('/forgetpassword', (req, res) => {
-  res.send('change password!')
+  res.send('Change password!')
 })
 
 app.get('/application', (req, res) => {
   res.send('Application Completed Successfully!')
 })
 
+// Start server
 app.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}`)
+  console.log(`Server running on port ${PORT}`)
 })
