@@ -1,6 +1,14 @@
+
+require('dotenv').config();
+
+const express = require('express')
+const app = express()
+
+const port = process.env.PORT || 3000;
 require('dotenv').config()
 const express = require('express')
 const app = express()
+
 
 // Use port from .env or fallback to 3000
 const PORT = process.env.PORT || 3000
@@ -21,6 +29,12 @@ app.get('/logout', (req, res) => {
 app.get('/forgetpassword', (req, res) => {
   res.send('Change password!')
 })
+
+
+
+app.listen(port, () => {
+  console.log(`Server running on http://localhost:${port}`);
+});
 
 app.get('/application', (req, res) => {
   res.send('Application Completed Successfully!')
